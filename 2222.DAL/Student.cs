@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2222
+namespace _2222.DAL
 {
     public class Student
     {

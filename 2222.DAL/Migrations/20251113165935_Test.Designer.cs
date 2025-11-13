@@ -4,27 +4,27 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using _2222;
+using _2222.DAL;
 
 #nullable disable
 
-namespace _2222.Migrations
+namespace _2222.DAL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251104183446_init")]
-    partial class init
+    [Migration("20251113165935_Test")]
+    partial class Test
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.10")
+                .HasAnnotation("ProductVersion", "9.0.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("_2222.Student", b =>
+            modelBuilder.Entity("_2222.DAL.Student", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

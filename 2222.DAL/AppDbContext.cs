@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2222
+namespace _2222.DAL
 {
     public class AppDbContext : DbContext
     {
@@ -13,6 +13,10 @@ namespace _2222
         private string _connectiontring => "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Everything;Integrated Security=True;Connect Timeout=30;";
 
         public DbSet<Student> Students { get; set; }
+
+        public DbSet<Author> Authors { get; set; }
+
+        public DbSet<Book> Books { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
